@@ -15,7 +15,6 @@ class Controls{
                 break;
         }
 
-        this.spawnTraffic();
         
     }
 
@@ -35,7 +34,6 @@ class Controls{
             case "s":
                 this.reverse=true;
                 break;
-            
         }
         
         
@@ -62,25 +60,4 @@ class Controls{
     }
     
   }
-
-
-  spawnTraffic(){
-    document.onkeydown=(event)=>{
-        switch(event.key){
-
-        case "d":
-            this.front = prompt(); 
-            break;
-        case "0":
-            traffic.push(new Car(road.getLaneCenter(0),bestCar.y-this.front,30,50,"dummy",2));
-            break;
-        case "1":
-            traffic.push(new Car(road.getLaneCenter(1),bestCar.y-this.front,30,50,"dummy",2));
-            break;
-        case "2":
-            traffic.push(new Car(road.getLaneCenter(2),bestCar.y-this.front,30,50,"dummy",2));
-            break;
-        }
-    }
 }
-};

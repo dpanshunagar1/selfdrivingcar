@@ -1,3 +1,4 @@
+
 <!doctype html>
 <head>
     <title>Self Driving cars - No libraries</title>
@@ -5,15 +6,19 @@
 </head>
 <body>
     <canvas id="myCanvas"> </canvas>
-    <div id="vbuttons">
-    <button onclick="save()">save</button>
-    <button onclick="discard()">discard</button>
-    
+    <div id="buttons">
+    <button onclick="save()" id="b1" class="material-symbols-outlined">save</button>
+    <button onclick="discard()" id="b2" class="material-symbols-outlined">Delete</button>
+    </div>
+    <div id="Score"><p id="sc">0</p></div>
+
+    <script src="bestBrain.js"></script>
+    <script src="road.js"></script>
+    <script src="util.js"></script>
     <script src="sensor.js"></script>
     <script src="network.js"></script>
-    <script src="util.js"></script>
-    <script src="road.js"></script>
     <script src="controls.js"></script>
     <script src="car.js"></script>
     <script src="main.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </body>

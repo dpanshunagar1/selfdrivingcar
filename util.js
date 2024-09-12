@@ -1,3 +1,5 @@
+
+
 function lerp(A,B,t){
     return A+(B-A)*t;
 }
@@ -40,6 +42,18 @@ function polysIntersect(poly1,poly2){
     }
 }
 
-function getRandomInt(max) {
-    return Math.floor(Math.random() * max);
-  }
+
+
+
+
+function getRandomArbitrary(min, max) {
+    return Math.floor(Math.random() * (max - min) + min);
+}
+
+
+function getRandomColor(){
+    const hue = 290+Math.random()*260;
+    return "hsl("+hue+",100%,60%)";
+}
+
+
